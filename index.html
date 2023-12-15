@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template HTML CSS JS</title>
+        <title>Somma numeri finché non inserisco il numero 99</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,35 @@
     <body>
         
         <h1>
-            Template HTML CSS JS
+            Somma numeri finché non inserisco il numero 99
+        </h1>
+
+        <div>
+            <form id="number-form">
+                <div>
+                    <div>
+                        <label for="num">
+                            Inserisci un numero:
+                        </label>
+                    </div>
+
+                    <input
+                        type="number"
+                        id="num"
+                        name="num"
+                        placeholder="Inserisci qui il tuo numero..."
+                        required
+                        min="1">
+                </div>
+
+                <button>
+                    Aggiungi
+                </button>
+            </form>
+        </div>
+
+        <h1>
+            Somma: <span id="sum-container"></span>
         </h1>
 
         <script src="js/scripts.js" type="text/javascript"></script>
